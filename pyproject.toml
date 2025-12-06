@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PyLandLock"
+version = "0.1.0"
+description = "Python bindings for Landlock Linux Security Module"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+    {name="José Gonçalves", email="josepedrosg2425@email.com"}
+]
+license = "MIT"
+keywords = ["landlock", "security", "sandbox"]
+
+[project.urls]
+"Homepage" = "https://github.com/jp2425/PyLandLock"
+"Repository" = "https://github.com/jp2425/PyLandLock"

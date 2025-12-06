@@ -17,3 +17,14 @@ class LandLockAccessRights(Enum):
     LANDLOCK_ACCESS_FS_REFER = 1 << 13  # 0x2000 (8192)    - Referenciar/linkar ficheiros
     LANDLOCK_ACCESS_FS_TRUNCATE = 1 << 14  # 0x4000 (16384)   - Truncar ficheiros
     LANDLOCK_ACCESS_FS_IOCTL_DEV = 1 << 15  # 0x8000 (32768)   - ioctl em dispositivos
+
+
+    # networking
+    LANDLOCK_ACCESS_NET_BIND_TCP = 1 << 0
+    LANDLOCK_ACCESS_NET_CONNECT_TCP = 1 << 1
+
+
+    # flags
+
+    LANDLOCK_SCOPE_ABSTRACT_UNIX_SOCKET = 1 << 0 #conexões a sockets UNIX criados fora do domínio são proibidas
+    LANDLOCK_SCOPE_SIGNAL = 1 << 1 # cannot send signals para fora do domínio da sandbox
