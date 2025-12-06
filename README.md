@@ -17,4 +17,10 @@ It is quite easy to use landlock on linux. Only 3 systemcalls are needed. The fl
 
 ## Usage
 
+First, install the library using the command (after clone):
+
+```
+pip install .
+```
+
 See [the example file](example.py) for an example.
